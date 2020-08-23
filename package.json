@@ -26,7 +26,15 @@
     "babel-jest": "^26.0.1",
     "eslint": "^7.2.0",
     "eslint-plugin-nuxt": "^1.0.0",
+    "husky": "^4.2.5",
     "jest": "^26.0.1",
     "vue-jest": "^3.0.4"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm test"
+    }
   }
+
+
 }
