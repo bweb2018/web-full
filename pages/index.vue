@@ -3,7 +3,7 @@
     <div>
       <Logo />
       <h1 class="title">
-        front
+        首页
       </h1>
       <div class="links">
         <a
@@ -23,6 +23,7 @@
           GitHub
         </a>
       </div>
+      <n-link to="/uc">用户中心</n-link>
     </div>
   </div>
 </template>
