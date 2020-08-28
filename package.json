@@ -14,8 +14,12 @@
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.11.0",
+    "axios": "^0.20.0",
     "element-ui": "^2.13.2",
-    "nuxt": "^2.13.0"
+    "md5": "^2.3.0",
+    "nuxt": "^2.13.0",
+    "stylus": "^0.54.8",
+    "stylus-loader": "^3.0.2"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^3.0.0",
@@ -26,7 +30,13 @@
     "babel-jest": "^26.0.1",
     "eslint": "^7.2.0",
     "eslint-plugin-nuxt": "^1.0.0",
+    "husky": "^4.2.5",
     "jest": "^26.0.1",
     "vue-jest": "^3.0.4"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm test"
+    }
   }
 }
