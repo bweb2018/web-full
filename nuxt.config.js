@@ -76,7 +76,7 @@ export default {
       target: 'http://localhost:7001',
       secure: false,
       pathRewrite: {
-        "^/api" : ''
+        '^/api': ''
       }
     }
   }

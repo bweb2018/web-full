@@ -23,7 +23,9 @@
           GitHub
         </a>
       </div>
-      <n-link to="/uc">用户中心</n-link>
+      <n-link to="/uc">
+        用户中心
+      </n-link>
     </div>
   </div>
 </template>

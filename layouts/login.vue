@@ -1,13 +1,13 @@
 <template>
   <div>
-    <div></div>
-    <Nuxt></Nuxt>
-    <div></div>
+    <div />
+    <Nuxt />
+    <div />
   </div>
 </template>
 
 <script>
-export default {};
+export default {}
 </script>
 
 <style lang="stylus">
