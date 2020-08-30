@@ -86,9 +86,11 @@ export default {
             sendcode: this.form.sendemail
           };
           const res = await this.$http.post("/user/login", obj);
-          console.log("handleLogin -> res", res)
           if (res.code === 0) {
-            
+            this.$message({
+              message: '恭喜你，登录成功',
+              type: 'success'
+            })
             setTimeout(() => {
               this.$router.push("/");
             }, 500);

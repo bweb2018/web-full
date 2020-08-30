@@ -9,9 +9,7 @@ const server = axios.create({
 export default ({ store, redirect }) => {
   server.interceptors.request.use(
     config => {
-      console.log( window.localStorage);
       const token = window.localStorage.getItem(TOKEN_KEY)
-      console.log("token", token)
       if (token) {
         config.headers.common["authorization"] = "Bearer " + token;
       }
@@ -25,8 +23,6 @@ export default ({ store, redirect }) => {
   server.interceptors.response.use(
     response => {
       const { data, config } = response;
-      console.log("config", config)
-      console.log("data", data)
       if (data.code === 0) {
         if (config.url === "/user/login") {
           localStorage.setItem(TOKEN_KEY, data.data.token);
